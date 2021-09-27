@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    padding: 50px;
+    max-width:1200px;
+    margin: 0 auto;
+    background:#e2e9e9;
+  
+}
+.cont-1{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    margin: 20px;
+}
+.cont-1 h2{
+    font-size: 40px;
+}
+.texto{
+    padding: 20px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+   
+}
+button{
+    background: black;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+.cont-2{ 
+    display: grid;
+    grid-template-columns: repeat(3,minmax(150px,1fr));
+    grid-template-rows: repeat(12,minmax(150px,1fr));
+    gap: 10px;
+}
+
+.caja{
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.caja:nth-of-type(1){
+  background-image: url(./img/camisa.jpg);
+  grid-column: 1/3;
+  grid-row: 1/5;
+}
+
+.caja:nth-of-type(2){
+    background-image: url(./img/mochila.jpg);
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.caja:nth-of-type(3){
+    background-image: url(./img/pantalon.jpg);
+    grid-column: 3/4;
+    grid-row: 3/5;
+}
+.caja:nth-of-type(4){
+    background-image: url(./img/top.jpg);
+    grid-column: 1/2;
+    grid-row: 5/7;
+}
+
+.caja:nth-of-type(5){
+    background-image: url(./img/vestidito.jpg);
+    grid-column: 2/4;
+    grid-row: 5/9;
+}
+
+.caja:nth-of-type(6){
+    background-image: url(./img/botas.jpg);
+    grid-column: 1/2;
+    grid-row: 7/9;
+}
+
+.caja:nth-of-type(7){
+    background-image: url(./img/Chaleco.jpg);
+    grid-column: 1/3;
+    grid-row: 9/13;
+}
+
+.caja:nth-of-type(8){
+    background-image: url(./img/short.jpeg);
+    grid-column: 3/4;
+    grid-row: 9/11;
+}
+
+.caja:nth-of-type(9){
+    background-image: url(./img/polo.jpg);
+    grid-column: 3/4;
+    grid-row: 11/13;
+}
+
